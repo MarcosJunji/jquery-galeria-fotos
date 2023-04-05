@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- HEADER COM BOTÃO DE ABRIR O FORMULÁRIO -->
+    <header>
+        <h1>Galeria de fotos</h1>
+        <button type="button">Nova imagem +</button>
+    </header>
+<!-- ADICIONANDO O FORMULÁRIO DE INSERÇÃO DE IMAGEM -->
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input type="url" id="endereco-imagem-nova" required placeholder="URL da imagem">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
+    </form>
+<!-- LISTA DE IMAGENS -->
+    <ul>
+        <li>
+            <img src="/img/foto1.jpg" alt="Pintura de um gato">
+            <div class="overlay-imagem-link">
+                <a href="/img/foto1.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="/img/foto2.jpg" alt="Pintura de um gato">
+            <div class="overlay-imagem-link">
+                <a href="/img/foto2.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="/img/foto3.jpg" alt="Pintura de um gato">
+            <div class="overlay-imagem-link">
+                <a href="/img/foto3.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+    </ul>
+<!-- ADICONANDO O JS E JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
